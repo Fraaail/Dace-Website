@@ -6,6 +6,9 @@ export const ADDRESS = "Brgy. Banago (Beside Gasso), Nagcarlan, Philippines";
 export const PHONE_NUMBER = "0938 475 2514";
 export const FACEBOOK_URL = "https://www.facebook.com/DaceSamgyeopsal/";
 export const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/vfNzyPK3MiuhAPQB8";
+// Embed-friendly URL (uses search query with output=embed so it can be placed inside an iframe)
+export const GOOGLE_MAPS_EMBED_URL =
+  "https://www.google.com/maps?q=Brgy.+Banago+Nagcarlan+Philippines&output=embed";
 
 export const MENU_ITEMS: MenuItem[] = [
   {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionId } from '../types';
-import { ADDRESS, PHONE_NUMBER, GOOGLE_MAPS_LINK } from '../constants';
+import { ADDRESS, PHONE_NUMBER, GOOGLE_MAPS_LINK, GOOGLE_MAPS_EMBED_URL } from '../constants';
 import { MapPin, Phone, Clock, ExternalLink } from 'lucide-react';
 
 export const Location: React.FC = () => {
@@ -62,7 +62,9 @@ export const Location: React.FC = () => {
           <div className="relative h-96 w-full rounded-3xl overflow-hidden border-4 border-brand-red/30 shadow-2xl group">
             {/* Embedded Google Map focusing on Nagcarlan/Banago area */}
             <iframe 
-              src={GOOGLE_MAPS_LINK}
+              // use the embed-specific URL so the map can render inside an iframe without
+              // triggering the "will not allow Firefox to display" security block
+              src={GOOGLE_MAPS_EMBED_URL}
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
