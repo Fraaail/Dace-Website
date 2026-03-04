@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionId } from '../types';
-import { ADDRESS, PHONE_NUMBER, GOOGLE_MAPS_LINK, GOOGLE_MAPS_EMBED_URL } from '../constants';
+import { ADDRESS, PHONE_NUMBER, GOOGLE_MAPS_LINK} from '../constants';
 import { MapPin, Phone, Clock, ExternalLink } from 'lucide-react';
 
 export const Location: React.FC = () => {
