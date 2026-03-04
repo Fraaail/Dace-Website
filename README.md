@@ -29,7 +29,15 @@ Requirements: Node.js 16 or later
    npm run preview
    ```
 
+4. Run unit tests (see [Testing Guide](docs/testing.md))
+
+   ```bash
+   npm run test
+   ```
+
 ---
+
+> 📚 **Documentation:** Additional docs are available in the `docs/` folder (testing, checklists, etc.)
 
 ## Features
 

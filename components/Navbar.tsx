@@ -72,6 +72,7 @@ export const Navbar: React.FC = () => {
 
           <div className="-mr-2 flex md:hidden">
             <button
+              aria-label="Toggle menu"
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-brand-darkRed focus:outline-none"
             >

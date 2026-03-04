@@ -61,19 +61,17 @@ export const Location: React.FC = () => {
 
           <div className="relative h-96 w-full rounded-3xl overflow-hidden border-4 border-brand-red/30 shadow-2xl group">
             {/* Embedded Google Map focusing on Nagcarlan/Banago area */}
-            <iframe 
-              // use the embed-specific URL so the map can render inside an iframe without
-              // triggering the "will not allow Firefox to display" security block
-              src={GOOGLE_MAPS_EMBED_URL}
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen={true} 
-              loading="lazy"
-              title="Dace's Samgyeopsal Location"
-              className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
-            ></iframe>
             
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3869.3389441602753!2d121.4150059!3d14.1161538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5b84272347ed%3A0x7e513b9f298fd25f!2sDace&#39;s%20Samgyeopsal!5e0!3m2!1sen!2sph!4v1772591229646!5m2!1sen!2sph"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }} 
+            allowFullScreen={true} 
+            loading="lazy"
+            title="Dace's Samgyeopsal Location"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
             <a 
               href={GOOGLE_MAPS_LINK} 
               target="_blank" 
